@@ -9,10 +9,12 @@ app.set("view engine", "ejs");
 
 var con = mysql.createConnection({
   host: "127.0.0.1",
+  port:"8889",
   user: "root",
-  password: "",
-  database:"hotelbooking"
+  password: "root",
+  database:"HotelBooking"
 });
+
 // var sql = "CREATE TABLE Customer (id int auto_increment,name VARCHAR(255),number varchar(10),checkIn VARCHAR(255), checkOut VARCHAR(255), rooms int, adults int, child int, primary key(id))";
 // con.query(sql,function (err, result){
 //   if(err){
